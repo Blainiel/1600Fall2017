@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class Mammal : Animal {
 
- public override void Start(){
+    public override void Start(){
         base.Start();
         Livebirth();
     }
-	 
+
 void Livebirth () {
-    print(this.name + " Gives Live Birth");
+    print(this.name + " Gives Livebirth");
+}
 }
