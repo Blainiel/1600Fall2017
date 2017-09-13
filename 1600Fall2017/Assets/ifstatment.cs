@@ -10,13 +10,14 @@ public int num2;
 public int value;
 public int X;
 public bool canPlay = true; 
-public string input;
+public Text input;
 private string password = "ironmansucks";
 public string input2;
 public string Username = "Batman";
 public bool OhNo = true;
 public bool grapes;
 public bool pain;
+public bool canPlayGame = false;
 	// Use this for initialization
 	void Start () {
 
@@ -40,8 +41,6 @@ public bool pain;
 			print("I'm in a lot of pain....");
 		}
 
-		if(input == password){
-		print("You know the password!");}
 
 		if(input2 == Username){
 		print("Good Username!");}
@@ -57,6 +56,24 @@ public bool pain;
 
 if (canPlay){
 print ("Play");}
+	}
+
+
+	void Update()
+	{
+			if(input.text == password){
+		print("You know the password!");
+		canPlayGame = true;}
+		else {
+			print("The password is incorrect");
+		}
+
+		if(canPlayGame){
+			print("playing game");
+		}
+		else {
+			print("Can't play yet, Enter a Correct Password");
+		}
 	}
 
 }
