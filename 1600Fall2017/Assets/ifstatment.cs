@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ifstatment : MonoBehaviour {
+public class Ifstatment : MonoBehaviour {
 
 public int num1;
 public int num2;
